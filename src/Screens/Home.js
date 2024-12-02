@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <View style={styles.container}>
             <StatusBar backgroundColor='grey' style='light' />
-            <View>
-                <Text style={{ ...FONTS, color: COLORS.black }}>Home</Text>
+            <View style={{ borderWidth: 5, borderColor: "black" }}>
+                <Text style={{ ...FONTS.h4, color: COLORS.black }}>Home</Text>
             </View>
         </View>
     )
@@ -18,8 +18,7 @@ export default Home;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: COLORS.chocolateBackground,
-        padding: SIZES.height
+        paddingTop: SIZES.h3a
+        // padding: SIZES.width
     }
 });
