@@ -68,6 +68,7 @@ export const FONTS = {
     largeTitleBold: {
         fontFamily: 'Satoshi-Bold',
         fontSize: SIZES.h1 * 1.1,
+        fontWeight: 'bold',
         lineHeight: screenHeight * 0.05,
         color: "#000000",
     },
@@ -103,6 +104,7 @@ export const FONTS = {
     },
     h4: {
         fontFamily: 'Satoshi-Bold',
+        fontWeight: 'bold',
         fontSize: SIZES.h4,
         lineHeight: screenHeight * 0.025,
         color: "#000000",

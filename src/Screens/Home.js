@@ -7,10 +7,10 @@ const Home = () => {
     return (
         <View style={styles.container}>
             <StatusBar backgroundColor='grey' style='light' />
-            <View style={{ borderWidth: 5, borderColor: "black" }}>
-                <Text style={{ ...FONTS.h4, color: COLORS.black }}>Home</Text>
+            <View>
+                <Text style={{ ...FONTS.h4, color: COLORS.black, textAlign: 'center' }}>Nota</Text>
             </View>
-        </View>
+        </View >
     )
 };
 
@@ -18,7 +18,6 @@ export default Home;
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: SIZES.h3a
-        // padding: SIZES.width
+        paddingTop: SIZES.h3a,
     }
 });
