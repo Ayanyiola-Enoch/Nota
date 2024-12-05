@@ -8,14 +8,14 @@ const Home = () => {
         <View style={styles.container}>
             <StatusBar backgroundColor='grey' style='light' />
             <View>
-                <Text style={{ ...FONTS.h4, color: COLORS.black, textAlign: 'center' }}>Nota</Text>
+                <Text style={{ ...FONTS.h3, color: COLORS.black, }}>Todos</Text>
             </View>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+            {/* <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                 <View onPress={() => clearTodo()}>
                     <Image source={icons.deleteImg} style={{ width: SIZES.h2, height: SIZES.h2 }} />
                 </View>
-            </View>
+            </View> */}
 
         </View >
     )
