@@ -7,8 +7,8 @@ import Toast from 'react-native-toast-message';
 const _layout = () => {
   return (
     <View style={styles.container}>
-      <Toast />
       <Home />
+      <Toast />
     </View>
   )
 }
