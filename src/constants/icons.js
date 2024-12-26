@@ -68,9 +68,11 @@ export const delete2 = require('../../src/assets/icons/delete2.png');
 // export const user2 = require('../../src/assets/icons/user2.png');
 // export const verticalmenu = require('../../src/assets/icons/verticalmenu.png');
 // export const web = require('../../src/assets/icons/web.png');
+export const add = require('../assets/icons/icons8-add-100.png')
 
 
 export default {
+    add,
     //     about,
     //     about2,
     //     academic,
