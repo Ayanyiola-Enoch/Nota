@@ -1,27 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react';
-import Home from '../src/screens/Home'
-import { COLORS, SIZES } from '../src/constants'
 import Toast from 'react-native-toast-message';
 import { Stack } from 'expo-router';
 
-const _layout = () => {
+export default function _layout() {
   return (
-    <View style={styles.container}>
-      <Home />
-      <Next />
-      <Toast />
-    </View>
+    <Stack>
+      <Stack.Screen name='Home' />
+      <Stack.Screen name='Next' />
+    </Stack>
+
   )
 }
-
-export default _layout;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: COLORS.chocolateBackground,
-    padding: SIZES.body1
-
-  }
-})
