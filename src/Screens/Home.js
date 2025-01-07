@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar";
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
-
+import { Link } from 'expo-router';
 
 const Home = () => {
     const [input, setInput] = useState('');
@@ -16,23 +16,29 @@ const Home = () => {
         try {
             if (input === "") {
                 console.warn('empty todo');
+                Toast.show({
+                    type: 'error',
+                    text1: 'Input is empty',
+                    text2: 'Please Fill in the Input Field',
+                    visibilityTime: 2000,
+                })
             }
+            else {
+                const newTodo = {
+                    id: Math.random(),
+                    title: input,
+                    isChecked: false,
+                }
+                setTodos([...todos, newTodo])
+                setInput('');
 
-            const newTodo = {
-                id: Math.random(),
-                title: input,
-                isChecked: false,
+                Toast.show({
+                    type: 'success',
+                    text1: 'Successful',
+                    text2: 'Note Successfully added',
+                    visibilityTime: 1000,
+                })
             }
-
-            setTodos([...todos, newTodo])
-            setInput('');
-
-            Toast.show({
-                type: 'success',
-                text1: 'Successful',
-                text2: 'Note Successfully added',
-                visibilityTime: 1000,
-            })
 
         } catch (error) {
             console.log('This is an error', error);
@@ -70,6 +76,7 @@ const Home = () => {
 
             {/*HEADER*/}
             <View>
+                <Link href="/" />
                 <Text style={{ ...FONTS.h3 }}>Hi, Enoch</Text>
             </View>
 
@@ -126,7 +133,7 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: SIZES.h1 * 2,
+        paddingTop: SIZES.h1 * 1.5,
         color: COLORS.chocolateBackground
     },
     text: {
