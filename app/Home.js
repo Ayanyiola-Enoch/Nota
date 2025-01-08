@@ -76,7 +76,7 @@ const Home = () => {
 
             {/*HEADER*/}
             <View>
-                <Link href="/" />
+                <Link href="" />
                 <Text style={{ ...FONTS.h3 }}>Hi, Enoch</Text>
             </View>
 
