@@ -1,11 +1,11 @@
 import { StyleSheet, Text, TextInput, View, FlatList, Image, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import { FONTS, COLORS, SIZES, icons, } from '../constants';
+import { FONTS, COLORS, SIZES, icons, } from '../src/constants';
 import { StatusBar } from "expo-status-bar";
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
-import { Link } from 'expo-router';
+import { Link } from "expo-router";
 
 const Home = () => {
     const [input, setInput] = useState('');

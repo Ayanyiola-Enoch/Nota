@@ -9,6 +9,8 @@ const Next = () => {
   )
 }
 
-export default Next
+export default Next;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+});
