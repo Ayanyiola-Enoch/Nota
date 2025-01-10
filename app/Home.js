@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
 import { Link } from "expo-router";
 
-const index = () => {
+const Home = () => {
     const [input, setInput] = useState('');
     const [todos, setTodos] = useState([]);
     const navigation = useNavigation();
@@ -128,7 +128,7 @@ const index = () => {
     )
 };
 
-export default index;
+export default Home;
 
 const styles = StyleSheet.create({
     container: {
