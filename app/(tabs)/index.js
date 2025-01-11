@@ -1,7 +1,9 @@
 import { StyleSheet, Text, TextInput, View, FlatList, Image, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
+import { icons, images } from '../../src/constants'
 import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";
+import Toast from 'react-native-toast-message';
 
 const Home = () => {
     const [input, setInput] = useState('');
@@ -79,7 +81,7 @@ const Home = () => {
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 10 }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold', color: "black" }}>Today's tasks</Text>
                 <TouchableOpacity onPress={clearTodo}>
-                    <Image source={icons.delete2} style={{ width: 20, height: 20 }} />
+                    <Link href='/app/(tabs)/Next.js' /> <Image source={icons.delete2} style={{ width: 20, height: 20 }} />
                 </TouchableOpacity>
             </View>
 
