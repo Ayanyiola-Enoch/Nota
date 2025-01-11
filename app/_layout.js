@@ -5,10 +5,10 @@ export default function Rootlayout() {
     <Stack>
       <Stack.Screen
         name='Home'
-        options={{ headerShown: false }} />
+        screenOptions={{ headerShown: false }} />
       <Stack.Screen
         name='Next'
-        options={{ headerShown: false }} />
+        screenOptions={{ headerShown: false }} />
     </Stack>
 
   )
