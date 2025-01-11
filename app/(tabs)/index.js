@@ -2,13 +2,14 @@ import { StyleSheet, Text, TextInput, View, FlatList, Image, TouchableOpacity } 
 import React, { useState } from 'react';
 import { icons, images } from '../../src/constants'
 import { StatusBar } from "expo-status-bar";
-import { Link } from "expo-router";
+import { Link, useRouter } from 'expo-router';
 import Toast from 'react-native-toast-message';
 
 const Home = () => {
     const [input, setInput] = useState('');
     const [todos, setTodos] = useState([]);
     // const navigation = useNavigation();
+    const router = useRouter();
 
     const submit = async () => {
         try {
@@ -74,16 +75,19 @@ const Home = () => {
 
             {/*HEADER*/}
             <View>
-                <Link href="" />
                 <Text style={{ fontSize: 18 }}>Hi, Enoch</Text>
             </View>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 10 }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold', color: "black" }}>Today's tasks</Text>
                 <TouchableOpacity onPress={clearTodo}>
-                    <Link href='/app/(tabs)/Next.js' /> <Image source={icons.delete2} style={{ width: 20, height: 20 }} />
+                    <Image source={icons.delete2} style={{ width: 20, height: 20 }} />
                 </TouchableOpacity>
             </View>
+
+            <Link href="/app/(tabs)/Next.js" style={{ backgroundColor: "pink", padding: 10, borderRadius: 5, width: 80, justifyContent: 'center', alignItems: 'center' }}>MOVE</Link>
+            <Text style={{ color: "white", fontWeight: 'bold', fontSize: 18 }}>Add</Text>
+
 
 
             <View style={{ flex: 1 }}>

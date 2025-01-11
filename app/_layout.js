@@ -6,6 +6,7 @@ export default function Home() {
       <Stack.Screen
         name="(tabs)"
         options={{ headerShown: false }} />
+
     </Stack>
 
   )
