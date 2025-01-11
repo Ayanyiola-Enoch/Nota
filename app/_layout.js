@@ -1,15 +1,15 @@
 import { Stack } from 'expo-router';
 
-export default function Rootlayout() {
+export default function Home() {
   return (
     <Stack>
       <Stack.Screen
         name='Home'
-        screenOptions={{ headerShown: false }} />
+        options={{ headerShown: false }} />
       <Stack.Screen
         name='Next'
-        screenOptions={{ headerShown: false }} />
+        options={{ headerShown: false }} />
     </Stack>
 
   )
-};
+}
