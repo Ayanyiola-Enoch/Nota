@@ -4,10 +4,7 @@ export default function Home() {
   return (
     <Stack>
       <Stack.Screen
-        name='Home'
-        options={{ headerShown: false }} />
-      <Stack.Screen
-        name='Next'
+        name="(tabs)"
         options={{ headerShown: false }} />
     </Stack>
 

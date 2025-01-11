@@ -6,7 +6,7 @@ import { Link } from "expo-router";
 const Home = () => {
     const [input, setInput] = useState('');
     const [todos, setTodos] = useState([]);
-    const navigation = useNavigation();
+    // const navigation = useNavigation();
 
     const submit = async () => {
         try {
@@ -76,8 +76,7 @@ const Home = () => {
                 <Text style={{ fontSize: 18 }}>Hi, Enoch</Text>
             </View>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: SIZES.h4 }}>
-
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 10 }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold', color: "black" }}>Today's tasks</Text>
                 <TouchableOpacity onPress={clearTodo}>
                     <Image source={icons.delete2} style={{ width: 20, height: 20 }} />
