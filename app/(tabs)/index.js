@@ -85,7 +85,7 @@ const Home = () => {
                 </TouchableOpacity>
             </View>
 
-            <Link href="/app/(tabs)/Next.js" style={{ backgroundColor: "pink", padding: 10, borderRadius: 5, width: 80, justifyContent: 'center', alignItems: 'center' }}>MOVE</Link>
+            <Link href="/(tabs)/Next" style={{ backgroundColor: "pink", padding: 10, borderRadius: 5, width: 80, justifyContent: 'center', alignItems: 'center' }}>MOVE</Link>
             <Text style={{ color: "white", fontWeight: 'bold', fontSize: 18 }}>Add</Text>
 
 
