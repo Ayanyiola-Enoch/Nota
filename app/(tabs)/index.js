@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TextInput, View, FlatList, Image, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import { icons, images } from '../../src/constants'
+import { icons, images, COLORS, SIZES } from '../../src/constants'
 import { StatusBar } from "expo-status-bar";
 import { Link, useRouter } from 'expo-router';
 import Toast from 'react-native-toast-message';
