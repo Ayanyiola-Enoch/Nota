@@ -4,6 +4,8 @@ import { icons, images, COLORS, SIZES } from '../../src/constants'
 import { StatusBar } from "expo-status-bar";
 import { Link, useRouter } from 'expo-router';
 import Toast from 'react-native-toast-message';
+import AsynchStorage from '@react-native-async-storage/async-storage';
+
 
 const Home = () => {
     const [input, setInput] = useState('');
@@ -13,6 +15,9 @@ const Home = () => {
 
     const submit = async () => {
         try {
+            await
+                AsynchStorage.setItem('todos', JSON.stringify(todos));
+            
             if (input === "") {
                 console.warn('empty todo');
                 Toast.show({
